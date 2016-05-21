@@ -1,3 +1,135 @@
 @mainColor: blue;
 
 @import "pizza/pizza-card";
+@general-color: #f0ad4e;
+@black: black;
+@white: white;
+@lable-color: #ea862e;
+
+.site-lable-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: 10px;
+  height: 100px;
+  width: 100px;
+  z-index: 1000;
+  background-color: @lable-color;
+  .lable-image{
+    position: absolute;
+    top: 100px;
+    transform: scaleY(-1);
+    width: 100px;
+    height: 11px;
+    background-image: url(../images/discount.svg);
+  }
+}
+
+.top-panel	{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  padding-left: 130px;
+  padding-right: 360px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+  font-size:	20px;
+  background-color: @black;
+
+
+  .top-panel-upper-line{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid @white;
+
+
+    .phone-number{
+      color: @white;
+      padding-top: 10px;
+      font-size: 20px;
+
+      display: inline-block;
+    }
+    .data-one{
+      color: @white;
+      padding-top: 15px;
+      padding-left: 25px;
+      font-size: 15px;
+      display: inline-block;
+    }
+    .data-two{
+      color: white;
+      padding-top: 12px;
+      padding-left: 25px;
+      font-size: 18px;
+      display: inline-block;
+    }
+    .sign-in-button{
+      float: right;
+      margin: 7px;
+      font-size: 15px;
+      font-weight: 500;
+      display: inline-block;
+    }
+
+  }
+  .top-panel-down-line{
+    width: 100%;
+    height: 50px;
+    .useless-lable{
+      cursor: pointer;
+      padding-top: 10px;
+      color: @white;
+      .link{
+        color: @white;
+      }
+    }
+  }
+}
+
+.left-row{
+
+}
+.right-row{
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 350px;
+  background-color: red;
+}
+
+@media (max-width: 800px)	{
+  .top-panel	{
+    height: 80px;
+    padding-left: 115px;
+    padding-right: 285px;
+
+    .top-panel-upper-line{
+      height: 30px;
+      .phone-number{
+        min-width: 280px;
+        font-size: 14px;
+      }
+      .sign-in-button {
+        margin: 5px;
+      }
+    }
+
+    .top-panel-down-line{
+       height: 50px;
+      .useless-lable{
+        display: none;
+      }
+    }
+
+  }
+  .right-row{
+    width: 280px;
+  }
+}
+
+
+
