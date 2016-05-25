@@ -15,29 +15,180 @@
 
 </head>
 <body>
-     <div class="top-panel  ">
-         <div class="site-lable-container">
-             <div class="lable-image"></div>
-         </div>
+
+<div class="site-lable-container ">
+    <div class="lable-image"></div>
+</div>
+<div class="sale-lable-container ">
+    <div class="lable-image"></div>
+</div>
+    <div class="top-panel ">
+
 
          <div class="top-panel-upper-line ">
             <div class="phone-number ">(044) 222 5 222</div>
             <div class="data-one hidden-xs hidden-sm ">24 години/ 7 днів на тиждень</div>
             <div class="data-two  hidden-xs hidden-sm hidden-md">Безкоштовна доставка піци</div>
-            <div class="sign-in-button btn btn-warning" >Увійти</div>
+            <div class="sign-in-button btn btn-warning " >Увійти</div>
          </div>
 
          <div class="top-panel-down-line"><div class="useless-lable"><a class="link">Піца</a></div></div>
+
      </div>
 
 
      <div class="container-fluid">
-        <div class="right-row "> </div>
+         <div class="row">
+        <div class="right-row ">
+            <div class="right-row-top-panel">
+                <span class="title">Замовлення</span>
+                <span class="amount-of-elements">1</span>
+                <span class="clear-button">Очистити замовлення</span>
+            </div>
 
-        <div class="left-row">
-            <div class="row" id="pizza_list"></div>
+            <div class="right-row-middle-panel">
+                <div class="to-bought-element">
+                    <div class="info">
+                        <div class="to-bought-element-title">Міксовий поло</div>
+                        <div class="to-bought-element-detailed-info">
+                            <span><img src="assets/images/size-icon.svg"></span>
+                            <span class="paddingright20">40</span>
+                            <span><img src="assets/images/weight.svg"></span>
+                            <span>845</span>
+                        </div>
+                        <div class="to-bought-element-action-buttons">
+                            <span class="bold ">399 грн</span>
+                            <div class="red-button glyphicon glyphicon-minus white marginleft20"></div>
+                            <span>1</span>
+                            <div class="green-button glyphicon glyphicon-plus white marginright20"></div>
+                            <div class="white-button glyphicon glyphicon-remove maincolor"></div>
+                        </div>
+                    </div>
+                    <div class="picture-container"><img class="picture" src="assets/images/pizza_1.jpg"></div>
+                </div>
+            </div>
+
+
+
+            <div class="right-row-bottom-panel">
+                <div class="button-container"><div class=" btn btn-warning submit-btn">Замовити</div></div>
+            </div>
         </div>
+
+        <div class="left-row col-md-12">
+            <div class=" row chosen-type-of-pizza-lable">Усі піци<span class="left-row-amount-of-pizza">8</span></div>
+            <div class="row types-of-pizzas">
+
+               <span class="element-chosen">Усі</span>
+               <span class="element">Мясні</span>
+               <span class="element">З ананасами</span>
+                <span class="element">З грибами</span>
+                <span class="element">З морепродуктами</span>
+                <span class="element">Вега</span>
+
+            </div>
+            <div class="row" id="pizza_list">
+                <div class="col-md-6 col-lg-4 pizza-card">
+                    <div class="thumbnail">
+                        <img class="pizza-icon" src="assets/images/pizza_8.jpg" alt="Pizza">
+
+
+
+                        <div class="caption">
+                            <span class="title">Дольче Маре</span>
+                            <div class="type">Морська піца</div>
+                            <div class="description">
+                                криветки тигрові, мідії, ікра червона, філе червоної риби, сир моцарелла, оливкова олія, вершки
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary buy-big">Купити велику</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pizza-card">
+                    <div class="thumbnail">
+                        <img class="pizza-icon" src="assets/images/pizza_7.jpg" alt="Pizza">
+
+
+                        <span class="tag label label-danger">Нова</span>
+
+
+                        <div class="caption">
+                            <span class="title">Імпреза</span>
+                            <div class="type">М’ясна піца</div>
+                            <div class="description">
+                                балик, салямі, куриця, сир моцарелла, сир рокфорд, ананаси, томатна паста, петрушка
+                            </div>
+                        </div>
+
+                        <!-- Перед тим щоб показати кнопку необхідно переконатися, що піца має великий розмір -->
+                        <button class="btn btn-primary buy-big">Купити велику</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pizza-card">
+                    <div class="thumbnail">
+                        <img class="pizza-icon" src="assets/images/pizza_5.jpg" alt="Pizza">
+
+
+
+                        <div class="caption">
+                            <span class="title">Сициліано</span>
+                            <div class="type">М’ясна піца</div>
+                            <div class="description">
+                                вітчина, салямі, сир моцарелла, шампінйони, перець болгарський, соус томатний
+                            </div>
+                        </div>
+
+                        <!-- Перед тим щоб показати кнопку необхідно переконатися, що піца має великий розмір -->
+                        <button class="btn btn-primary buy-big">Купити велику</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pizza-card">
+                    <div class="thumbnail">
+                        <img class="pizza-icon" src="assets/images/pizza_2.jpg" alt="Pizza">
+
+
+                        <span class="tag label label-success">Популярна</span>
+
+
+                        <div class="caption">
+                            <span class="title">BBQ</span>
+                            <div class="type">М’ясна піца</div>
+                            <div class="description">
+                                мисливські ковбаски, ковбаски папероні, шинка, сир домашній, шампінйони, петрушка, оливки
+                            </div>
+                        </div>
+
+                        <!-- Перед тим щоб показати кнопку необхідно переконатися, що піца має великий розмір -->
+                        <button class="btn btn-primary buy-big">Купити велику</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pizza-card">
+                    <div class="thumbnail">
+                        <img class="pizza-icon" src="assets/images/pizza_6.jpg" alt="Pizza">
+
+
+
+                        <div class="caption">
+                            <span class="title">Мікс смаків</span>
+                            <div class="type">М’ясна піца</div>
+                            <div class="description">
+                                ковбаски, сир моцарелла, шампінйони, ананаси, цибуля кримська, огірки квашені, соус гірчичний
+                            </div>
+                        </div>
+
+                        <!-- Перед тим щоб показати кнопку необхідно переконатися, що піца має великий розмір -->
+                        <button class="btn btn-primary buy-big">Купити велику</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+         </div>
      </div>
+    <div class="footer ">
+        <div class="massage">Хочу спати!</div>
+    </div>
 
 <!-- jQuery JavaScript -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -45,7 +196,6 @@
 <!--Bootsrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<!--Own JavaScript -->
-
+<!--<script type="text/javascript"  src="assets/js/main.js"> </script>-->
 </body>
 </html>

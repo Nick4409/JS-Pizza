@@ -5,7 +5,9 @@
 @black: black;
 @white: white;
 @lable-color: #ea862e;
-
+@gray: #F5F5F5;
+@gray-shadow: #dbdbdb;
+@gray-border: #e8e8e8;
 .site-lable-container{
   position: fixed;
   top: 0;
@@ -13,12 +15,35 @@
   margin-left: 10px;
   height: 100px;
   width: 100px;
-  z-index: 1000;
+
+  z-index: 11000;
   background-color: @lable-color;
   .lable-image{
+
     position: absolute;
     top: 100px;
     transform: scaleY(-1);
+    width: 100px;
+    height: 11px;
+    background-image: url(../images/discount.svg);
+  }
+}
+
+.sale-lable-container{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-left: 10px;
+  height: 100px;
+  width: 100px;
+
+  z-index: 11000;
+  background-color: @lable-color;
+  .lable-image{
+
+    position: absolute;
+    bottom: 100px;
+
     width: 100px;
     height: 11px;
     background-image: url(../images/discount.svg);
@@ -36,8 +61,9 @@
   padding-top: 0px;
   margin-bottom: 20px;
   font-size:	20px;
+  opacity: 0.8;
   background-color: @black;
-
+  z-index: 10000;
 
   .top-panel-upper-line{
     width: 100%;
@@ -90,7 +116,69 @@
 }
 
 .left-row{
+  z-index: 100;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-right: 370px;
 
+  .types-of-pizzas{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    .element-chosen{
+      cursor: pointer;
+      display: inline-block;
+      height: 40px;
+      text-align: center;
+      font-size: 15px;
+      padding-top: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-radius: 4px;
+      margin: 2px;
+      background-color: @lable-color;
+      color: @white;
+    }
+    .element{
+      cursor: pointer;
+      display: inline-block;
+      height: 40px;
+      text-align: center;
+      font-size: 15px;
+      padding-top: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-radius: 4px;
+      margin: 2px;
+      background-color: @white;
+      color: @lable-color;
+    }
+    .element:hover{
+      background-color: @gray-border;
+    }
+  }
+  .chosen-type-of-pizza-lable{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    .left-row-amount-of-pizza{
+      position: relative;
+      top: -2px;
+      display: inline-block;
+      padding-top: 2px;
+      font-size: 15px;
+      margin: 10px;
+      height: 26px;
+      width: 26px;
+      border-radius: 50%;
+      color: @white;
+      background-color: @general-color;
+    }
+  }
+  .thumbnail{
+    position: relative;
+    z-index: 100;
+  }
 }
 .right-row{
   position: fixed;
@@ -99,6 +187,169 @@
   bottom: 0;
   width: 350px;
   background-color: red;
+  z-index: 11000;
+  .right-row-top-panel{
+    width: 100%;
+    height: 100px;
+    background-color: @white;
+    padding-top: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: 1px solid @gray-border;
+
+    .title{
+      display: inline-block;
+      font-size: 20px;
+      font-weight: bold;
+
+    }
+    .amount-of-elements{
+      display: inline-block;
+      font-size: 12px;
+      height: 20px;
+      width: 20px;
+      padding-top: 2px;
+      padding-left: 6px;
+      margin: 3px;
+      margin-bottom: 15px;
+      border-radius: 50%;
+      color: @white;
+      background-color: @general-color;
+    }
+
+    .clear-button{
+      float: right;
+      font-size: 12px;
+      margin: 7px;
+      margin-right: 0px;
+      display: inline-block;
+      color: grey;
+    }
+  }
+  .right-row-middle-panel{
+    display: block;
+    height: 100%;
+    border-top: 1px solid @gray-border;
+    border-left: 1px solid @gray-border;
+    box-shadow: 0 7px 10px 2px @gray-shadow;
+    padding-bottom: 100px;
+    background-color: @gray;
+
+    .to-bought-element{
+      height: 100px;
+      width: 100%;
+      padding: 1px;
+      background-color: #F5F5F5;
+      border-bottom: 1px solid @gray-border;
+      .info{
+        display: inline-block;
+        height: 100%;
+        width: 85%;
+        float: left;
+        .to-bought-element-title{
+          width: 100%;
+          height: 40px;
+          font-size: 22px;
+          padding: 5px;
+          padding-left: 20px;
+          color: @lable-color;
+
+        }
+        .to-bought-element-detailed-info{
+          width: 100%;
+          height: 20px;
+          padding-left: 20px;
+
+        }
+        .to-bought-element-action-buttons{
+          height: 30px;
+          margin-top: 4px;
+          padding-left: 20px;
+
+          .green-button{
+
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+            text-align:center;
+            border-radius: 100%;
+            padding-top: 8px;
+            font-size: 10px;
+            border: none;
+            background: #16ab39;
+          }
+          .red-button{
+
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            text-align:center;
+            font-size: 10px;
+            padding-top: 8px;
+            border-radius: 100%;
+            border: none;
+            background: #DB2828;
+          }
+          .white-button{
+
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            text-align:center;
+            font-size: 10px;
+            padding-top: 8px;
+            border-radius: 100%;
+            border: 2px solid @gray-border;
+            background: @white;
+
+          }
+        }
+      }
+      .picture-container{
+        position: relative;
+        margin: 0%;
+        display: inline-block;
+        height: 100%;
+        width: 15%;
+        float: left;
+
+        .picture{
+          position: absolute;
+          height: inherit;
+
+        }
+      }
+    }
+  }
+  .right-row-bottom-panel{
+    position: absolute;
+    bottom: 0;
+    vertical-align: bottom;
+    border-left: 1px solid @gray-border;
+    border-top: 1px solid @gray-border;
+
+    height: 100px;
+    width: 100%;
+    background-color: @white;
+    .button-container{
+      height: 100%;
+      padding: 25px;
+      .submit-btn{
+        font-size: 25px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.footer{
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid @gray-border;
+  text-align: center;
+  padding-top: 30px;
+  padding-right: 360px;
+  background-color: @gray;
 }
 
 @media (max-width: 800px)	{
@@ -127,9 +378,53 @@
 
   }
   .right-row{
+
     width: 280px;
+    .right-row-top-panel{
+      padding-top: 30px;
+      height: 80px;
+      .title{
+        font-size: 18px;
+      }
+      .clear-button{
+        font-size: 10px;
+      }
+    }
+  }
+  .left-row{
+    padding-right: 295px;
+    padding-top: 110px;
+
+  }
+  .footer{
+    padding-right: 285px;
   }
 }
+.tag{
+  font-size: 14px;
+  position: absolute;
+  top: -7px;
+  right: 0;
+}
+.paddingright20{
+  padding-right: 20px;
+}
+.marginright20{
+  margin-right: 20px;
+}
+.marginleft20{
+  margin-left: 20px;
+}
 
-
-
+.white{
+  color: @white;
+}
+.bold{
+  font-weight: bold;
+}
+.maincolor{
+  color: @lable-color;
+}
+.material{
+  opacity: 1;
+}
