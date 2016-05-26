@@ -13,6 +13,9 @@
   top: 0;
   left: 0;
   margin-left: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: @white;
   height: 100px;
   width: 100px;
 
@@ -33,6 +36,9 @@
   position: fixed;
   bottom: 0;
   left: 0;
+  text-align: center;
+  font-size: 24px;
+  color: @white;
   margin-left: 10px;
   height: 100px;
   width: 100px;
@@ -176,6 +182,7 @@
     }
   }
   .thumbnail{
+    height: inherit;
     position: relative;
     z-index: 100;
   }
@@ -349,9 +356,98 @@
   text-align: center;
   padding-top: 30px;
   padding-right: 360px;
+  padding-left: 120px;
   background-color: @gray;
 }
 
+.caption{
+  min-height: 270px;
+  padding: 10px;
+  .title{
+    font-size: 26px;
+    color: @lable-color;
+    font-weight: bold;
+  }
+  .type{
+    font-size: 12px;
+    color: gray;
+  }
+  .description{
+    height: 65px;
+    text-overflow: ellipsis;
+  }
+  .size-left{
+    text-align: center;
+    width: 50%;
+    padding-top: 10px;
+
+    float: left;
+  }
+  .size-right{
+    text-align: center;
+    width: 50%;
+    padding-top: 10px;
+
+    float: right;
+  }
+  .weight-left{
+    text-align: center;
+    width: 50%;
+
+    float: left;
+  }
+  .weight-right{
+    text-align: center;
+    width: 50%;
+
+    float: right;
+  }
+  .price-left{
+    padding-top: 10px;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+  }
+  .price-right{
+    padding-top: 10px;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+  }
+  .buy-right{
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+
+    float: right;
+    .buy-button-right{
+      height: 30px;
+      padding: 5px;
+      border-radius: 4px;
+      background-color: @lable-color;
+      color: @white;
+    }
+  }
+  .buy-left{
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+
+    float: left;
+    .buy-button-left{
+      height: 30px;
+      padding: 5px;
+      border-radius: 4px;
+      background-color: @lable-color;
+      color: @white;
+    }
+  }
+
+}
 @media (max-width: 800px)	{
   .top-panel	{
     height: 80px;
@@ -427,4 +523,8 @@
 }
 .material{
   opacity: 1;
+}
+.block{
+  display: block;
+  width: 100%;
 }
