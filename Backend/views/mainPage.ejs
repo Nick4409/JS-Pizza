@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Pizza</title>
-
-    <!-- Bootsrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-    <!-- LESS основний файл -->
-    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less"/>
-    <!-- LESS JavaScript компілятор -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
-
-
-</head>
-<body>
+<% include common/header.ejs %>
 
 <div class="site-lable-container ">
     Nick's pizza
@@ -24,22 +8,6 @@
     Якась там знижка
     <div class="lable-image"></div>
 </div>
-<div class="top-panel ">
-
-
-    <div class="top-panel-upper-line ">
-        <div class="phone-number ">(044) 222 5 222</div>
-        <div class="data-one hidden-xs hidden-sm ">24 години/ 7 днів на тиждень</div>
-        <div class="data-two  hidden-xs hidden-sm hidden-md">Безкоштовна доставка піци</div>
-        <div class="sign-in-button btn btn-warning opacity">Увійти</div>
-    </div>
-
-    <div class="top-panel-down-line">
-        <div class="useless-lable"><a class="link">Піца</a></div>
-    </div>
-
-</div>
-
 
 <div class="container-fluid">
     <div class="row">
@@ -127,16 +95,5 @@
         </div>
     </div>
 </div>
-<div class="footer ">
-    <div class="massage">Хочу спати! Але та, це виконано студентом другого курсу Києво-Могилянської академії Дехтяренком Миколою в межах курсу Javascript.</div>
-</div>
 
-<!-- jQuery JavaScript -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-<!--Bootsrap JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script type="text/javascript"  src="assets/js/main.js"> </script>
-<!--<script type="text/javascript"  src="assets/js/main.js"> </script>-->
-</body>
-</html>
+<% include common/footer.ejs %>

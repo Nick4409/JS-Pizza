@@ -1,9 +1,19 @@
-<div>
-    <%= pizza.title %> (<%= size %>)
-    <div>Ціна: <%= pizza[size].price %> грн.</div>
-    <div>
-        <button class="btn btn-danger minus">-</button>
-        <span class="label label-default"><%= quantity %></span>
-        <button class="btn btn-success plus">+</button>
-    </div>
+<div class='to-bought-element'>
+    <div class='info'>
+        <div class='to-bought-element-title'><%= pizza.title %> (<%if(size=='big_size'){ %><text>Велика</text><% } else { %><text>Маленька</text><% } %>)</div>
+        <div class='to-bought-element-detailed-info'>
+            <span><img src= 'assets/images/size-icon.svg' ></span>
+            <span class='paddingright20'><% if(size=='big_size'){ %><text>40</text> <% } else { %><text>30</text><% } %></span>
+            <span><img src='assets/images/weight.svg'></span>
+            <span><%if(size=='big_size'){ %><text><%= pizza.big_size.weight%></text> <% } else { %><text><%= pizza.small_size.weight%></text><% } %></span>
+            </div>
+        <div class='to-bought-element-action-buttons'>
+            <span class='bold '><%if(size=='big_size'){ %><text><%= pizza.big_size.price%></text> <% } else { %><text><%= pizza.small_size.price%></text><% } %> грн</span>
+            <div class='red-button glyphicon glyphicon-minus white marginleft20 minus'></div>
+            <span><%= quantity %></span>
+            <div class='green-button glyphicon glyphicon-plus white marginright20 plus'></div>
+            <div class='white-button glyphicon glyphicon-remove maincolor delete'></div>
+            </div>
+        </div>
+    <div class='picture-container'><img class='picture' src=<%= pizza.icon%>></div>
 </div>

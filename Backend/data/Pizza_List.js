@@ -1,3 +1,6 @@
+/**
+ * Created by diana on 12.01.16.
+ */
 
 var pizza_info = [
     {
@@ -23,9 +26,7 @@ var pizza_info = [
             price: 169
         },
         is_new:true,
-        is_popular:true,
-        has_small_size:true,
-        has_big_size:true
+        is_popular:true
 
     },
     {
@@ -49,9 +50,7 @@ var pizza_info = [
             size: 40,
             price: 199
         },
-        is_popular:true,
-        has_small_size:true,
-        has_big_size:true
+        is_popular:true
     },
     {
         id:3,
@@ -73,9 +72,7 @@ var pizza_info = [
             weight: 780,
             size: 40,
             price: 179
-        },
-        has_small_size:true,
-        has_big_size:true
+        }
     },
     {
         id:4,
@@ -97,9 +94,7 @@ var pizza_info = [
             weight: 790,
             size: 40,
             price: 169
-        },
-        has_small_size:true,
-        has_big_size:true
+        }
     },
     {
         id:17,
@@ -115,9 +110,7 @@ var pizza_info = [
             weight: 370,
             size: 30,
             price: 89
-        },
-        has_small_size:true,
-        has_big_size:false
+        }
     },
     {
         id:43,
@@ -140,9 +133,7 @@ var pizza_info = [
             weight: 780,
             size: 40,
             price: 180
-        },
-        has_small_size:true,
-        has_big_size:true
+        }
     },
     {
         id:90,
@@ -158,9 +149,7 @@ var pizza_info = [
             weight: 845,
             size: 40,
             price: 399
-        },
-        has_small_size:false,
-        has_big_size:true
+        }
     },
     {
         id:6,
@@ -181,11 +170,8 @@ var pizza_info = [
             weight: 700,
             size: 40,
             price: 299
-        },
-        has_small_size:true,
-        has_big_size:true
+        }
     }
 ];
-
 
 module.exports = pizza_info;

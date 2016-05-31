@@ -99,6 +99,8 @@
       display: inline-block;
     }
     .sign-in-button{
+      background-color: @lable-color;
+      opacity: 1!important;
       float: right;
       margin: 7px;
       font-size: 15px;
@@ -225,6 +227,7 @@
     }
 
     .clear-button{
+      cursor: pointer;
       float: right;
       font-size: 12px;
       margin: 7px;
@@ -256,7 +259,7 @@
         .to-bought-element-title{
           width: 100%;
           height: 40px;
-          font-size: 22px;
+          font-size: 20px;
           padding: 5px;
           padding-left: 20px;
           color: @lable-color;
@@ -339,10 +342,12 @@
     width: 100%;
     background-color: @white;
     .button-container{
-      height: 100%;
-      padding: 25px;
+      height: 80%;
+      padding: 16px;
+      padding-left: 18px;
+      padding-right: 18px;
       .submit-btn{
-        font-size: 25px;
+        font-size: 22px;
         width: 100%;
         height: 100%;
       }
@@ -418,34 +423,7 @@
     font-weight: bold;
     float: right;
   }
-  .buy-right{
-    padding: 10px;
-    text-align: center;
-    width: 50%;
 
-    float: right;
-    .buy-button-right{
-      height: 30px;
-      padding: 5px;
-      border-radius: 4px;
-      background-color: @lable-color;
-      color: @white;
-    }
-  }
-  .buy-left{
-    padding: 10px;
-    text-align: center;
-    width: 50%;
-
-    float: left;
-    .buy-button-left{
-      height: 30px;
-      padding: 5px;
-      border-radius: 4px;
-      background-color: @lable-color;
-      color: @white;
-    }
-  }
 
 }
 @media (max-width: 800px)	{
@@ -499,16 +477,19 @@
 .tag{
   font-size: 14px;
   position: absolute;
-  top: -7px;
-  right: 0;
+  top: -8px;
+  right: -8px;
+
 }
 .paddingright20{
   padding-right: 20px;
 }
 .marginright20{
+  margin-left: 5px;
   margin-right: 20px;
 }
 .marginleft20{
+  margin-right: 5px;
   margin-left: 20px;
 }
 
@@ -527,4 +508,54 @@
 .block{
   display: block;
   width: 100%;
+}
+.buy-right{
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+
+  float: right;
+  .buy-button-right{
+    cursor: pointer;
+    height: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: @lable-color;
+    color: @white;
+  }
+}
+.buy-left{
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+
+  float: left;
+  .buy-button-left{
+    cursor: pointer;
+    height: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: @lable-color;
+    color: @white;
+  }
+}
+.onesizecard{
+  width: 100%!important;
+}
+.opacity{
+  opacity: 1!important;
+}
+.sum{
+  height: 20%;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 18px;
+  padding-left: 18px;
+  .sum-number{
+    float: right;
+  }
+  .hrn{
+    float: right;
+  }
 }
